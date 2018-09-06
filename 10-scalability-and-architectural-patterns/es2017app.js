@@ -2,10 +2,10 @@ import http from 'http';
 const { pid } = process;
 
 let book = {
-    author: 'Zsolt Nagy',
-    title: 'The Developer\'s Edge',
-    website: 'devcareermastery.com',
-    chapters: 8
+    author: 'Home Depot Jr',
+    title: 'The Orange Method',
+    website: '2kool4school.com',
+    chapters: 1
 }
 
 console.log(Object.values(book));

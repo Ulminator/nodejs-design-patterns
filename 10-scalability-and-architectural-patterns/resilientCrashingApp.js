@@ -2,9 +2,9 @@ const cluster = require('cluster');
 const os = require('os');
 
 if (cluster.isMaster) {
-    const cpus = os.cpus().length;
-    console.log(`Clustering to ${cpus} CPUSs`);
-    for (let i = 0; i < cpus; i++) {
+    const numCPUs = os.cpus().length;
+    console.log(`Clustering to ${numCPUs} CPUSs`);
+    for (let i = 0; i < numCPUs; i++) {
         // the current main module is run again, but this time in a worker mode
         cluster.fork();
     }
@@ -19,6 +19,3 @@ if (cluster.isMaster) {
     // starts a new http server
     require('./crashingApp');
 }
-
-// brew install siege
-// siege -c200 -t10s http://localhost:8080/
