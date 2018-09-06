@@ -4,7 +4,7 @@
   "description": "Node Tech Talk",
   "main": "app.js",
   "scripts": {
-    "build": "babel es2017app.js -d build",
+    "build": "node log.js && babel es2017app.js -d build",
     "babelRun": "babel-node ./es2017app"
   },
   "babel": {
@@ -36,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "figlet": "^1.2.0"
   }
 }
