@@ -13,8 +13,3 @@ pm2 list
 pm2 monit
 pm2 stop all
 pm2 delete all
-
-npm i babel-core
-node es2017app.js
-npm build
-node build/es2017app.js
