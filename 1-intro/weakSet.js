@@ -12,4 +12,4 @@ obj1 = undefined;
 console.log('Weak Set: ' + weakSet.has(obj1));
 console.log('Set :', set);
 
-// Set will still cintain the information that was in obj1, while weak set will not.
+// Set will still contian the information that was in obj1, while weak set will not.
