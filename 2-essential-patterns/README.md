@@ -17,4 +17,6 @@ Observer Pattern
     - Observer defines an object (called subject), which can notify a set of observers (or listeners), when a change in its state happens.
     - Difference between Callback Pattern
         - Subject can actually notify multiple observers
-    - EventEmitter Class
+    - EventEmitter Class vs. Callbacks
+        - When a result must be returned in an synchronous way -> Callback
+        - When there is a need to communicate that something has happened -> EventEmitter
